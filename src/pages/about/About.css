@@ -1,0 +1,104 @@
+.About{
+    width:100%;
+    max-height: 100vh;
+    height:auto;
+    background-color: white;
+}
+
+.About .container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .container .about-col{
+    flex-basis: 40%;
+}
+
+.About .container .about-col img{
+    width: 80%;
+}
+
+.About .container .about-col h1{
+    font-size:clamp(2rem,4vw,4rem);
+    text-transform: uppercase;
+    letter-spacing: clamp(0.2rem,1vw, 1rem);
+    margin-bottom: 1rem;
+}
+
+.About .container .about-col p{
+    font-size: clamp(1.5rem, 1.8vw,1.8rem );
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.About .container .about-col button{
+    border:0.15rem solid rgb(104, 7, 194);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.1rem 2rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    background-color:rgb(104, 7, 194);
+    color:#fff;
+    transition: all 0.4s ease;
+}
+
+.About .container .about-col button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+
+/* responsive  */
+@media screen and (max-width:966px){
+    .About .container .about-col{
+        flex-basis: 46%;
+    }
+
+    .About .container .about-col button{
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+    }
+}
+
+
+@media screen and (max-width:772px){
+    .About .container{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .About .container .about-col{
+        width: 90%;
+        /* background-color: red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+    .About .container .about-col img{
+        width: 50%;
+    }
+    .About .container .about-col h1{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:512px){
+    .About .container .about-col img{
+        width: 70%;
+    }
+
+    .About .container .about-col button{
+        padding: 0.9rem 1rem;
+        font-size: 1.4rem;
+    }
+}

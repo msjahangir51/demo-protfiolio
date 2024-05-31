@@ -1,0 +1,109 @@
+.ClientAboutME{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.ClientAboutME .container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.ClientAboutME .container .col-1 h1{
+    font-size: clamp(2.5rem, 3vw,3rem);
+    text-transform: uppercase;
+    text-align:center;
+    margin: 1rem 0;
+}
+
+.ClientAboutME .container .col-1 p{
+    width: 60%;
+    margin:1rem auto;
+    text-align: center;
+    font-size: clamp(1.4rem, 1.5vw, 1.5rem);
+    /* margin: 1rem 0; */
+    font-weight: 500;
+}
+
+
+.ClientAboutME .container .col-2{
+    width:60%;
+}
+
+.ClientAboutME .container .col-2 .swiper-col{
+    background-color: white;
+    display: flex;
+    padding: 1rem 0;
+    padding-right: 2rem;
+    height: 13rem;
+    box-shadow: 0 0 1rem gray, -0 -0 1rem gray,;
+}
+
+.ClientAboutME .container .col-2 .swiper-col  .image-col{
+    width: 45rem;
+    height: 100%;
+    padding: 1rem;
+}
+.ClientAboutME .container .col-2 .swiper-col  .image-col img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.ClientAboutME .container .col-2 .swiper-col  .text-col{
+    margin-left: 1rem;
+}
+
+.ClientAboutME .container .col-2 .swiper-col .text-col h1{
+    text-transform: uppercase;
+    font-size: clamp(1.6rem,2.3vw,2.3rem);
+    margin: 0.5rem 0;
+}
+
+.ClientAboutME .container .col-2 .swiper-col .text-col p{
+    font-size: clamp(1.2rem,1.3vw,1.3rem);
+}
+
+
+.mySwiper{
+    height: 20rem;
+    /* background-color: red; */
+}
+
+@media screen and (max-width:1226px) {
+    .ClientAboutME .container .col-2{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width:904px) {
+    
+    .ClientAboutME .container .col-2{
+        width: 95%;
+    }
+}
+@media screen and (max-width:774px) {
+    
+    .ClientAboutME .container .col-2{
+        width: 75%;
+    }
+
+    .ClientAboutME .container .col-1 p{
+        width: 80%;
+    }
+}
+@media screen and (max-width:486px) {
+    
+    .ClientAboutME .container .col-2{
+        width: 90%;
+    }
+    .ClientAboutME .container .col-1 p{
+        width: 90%;
+    }
+}

@@ -1,0 +1,105 @@
+.Admin{
+    widtH: 100%;
+    height:auto;
+    min-height: 100vh;
+}
+
+.Admin .container{
+    width:100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: rgb(9, 9, 18); 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+
+.Admin .container h1{
+    color:white;
+    margin:2rem 0;
+    font-size: clamp(3rem, 4.5vw, 4.5rem);
+}
+
+.Admin .container .form-table{
+    background-color: rgba(72, 70, 82, 0.475);
+    backdrop-filter: blue(2rem);
+    max-width:40rem;
+    width: 40rem;
+    margin:0 auto;
+    box-shadow: 0 0 2rem #69696b78,-0 -0 2rem #0228cf1b;
+    margin-bottom: 4rem;
+}
+.Admin .container .form-table form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:4rem 3rem;
+}
+
+.Admin .container .form-table form input{
+    width:100%;
+    padding:1rem 1rem;
+    margin:1rem 0;
+    border-radius: 0.3rem;
+    font-size: 1.7rem;
+    background-color: rgba(9, 9, 82, 0.132);
+    backdrop-filter: blur(2rem);
+    border: 0.15rem solid #10133e;
+    color:#fff;
+}
+.Admin .container .form-table form input:focus{
+    border-color: #a9aef9;
+}
+.image-uploader-input{
+    display: none;
+}
+
+.image-uploder-clouds{
+    width: 20rem;
+    height: 15rem;
+    border:0.11rem solid #4f72e5;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin:2rem 0;
+}
+
+.image-uploder-clouds img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productAdd-btn{
+    font-size:1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.6rem 2rem;
+    background-color:transparent;
+    color: white;
+    border:0.15rem solid crimson;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    transition: background-color 0.5s ease;
+}
+
+.productAdd-btn:hover{
+    background-color: crimson;
+}
+
+/* responsive  */
+
+@media screen and (max-width:508px) {
+    .Admin .container .form-table{
+        max-width:28rem;
+    }
+    .Admin .container .form-table form{
+        padding:4rem 2.6rem;
+    }
+    .Admin .container .form-table form input{
+        padding:0.7rem 1rem;
+        font-size: 1.3rem;
+    }
+}

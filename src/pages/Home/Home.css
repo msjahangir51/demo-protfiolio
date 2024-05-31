@@ -1,0 +1,99 @@
+.hero-section{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: white;
+}
+
+
+.hero-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    height: auto;
+    height: 100%;
+}
+
+.hero-section .container .home-col{
+    flex-basis: 40%;
+    /* background: red; */
+}
+
+
+.home-col h2{
+    font-size:clamp(2rem,4vw, 3.5rem); 
+}
+.home-col h2 span{
+    display: inline-block;
+    max-width: 80%;
+    width: 30vw;
+    background-color: black;
+    height: 0.4rem;
+}
+
+.home-col h1{
+    font-size: clamp(3rem, 4vw, 4rem);
+}
+
+.home-col p{
+    font-size:clamp(1.8rem, 2vw , 2rem);
+    text-transform:uppercase;
+    margin:1rem 0;
+}
+
+
+.home-col button{
+    color:#fff;
+    font-size: clamp(1.4rem, 1.7vw, 1.7rem);
+    text-transform: uppercase;
+    padding:0.9rem 2.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    /* transition: all 0.3s; */
+}
+
+.home-col button.btn-1{
+    margin-right: 1rem;
+    background:linear-gradient(to right, rgb(47, 25, 247),rgb(104, 7, 194));
+    border-radius: 0.5rem;
+    border:0.15rem solid rgb(104, 7, 194); 
+}
+
+
+.home-col button.btn-1:hover{
+    background: transparent;
+    color:#000;
+}
+.home-col button.btn-2{
+    border: 0.15rem solid rgb(47, 25, 247);
+    color:#000;
+    transition: all 0.5s ease;
+}
+
+.home-col button.btn-2:hover{
+    border-color: rgb(104, 7, 194);
+    background-color: rgb(104, 7, 194);
+    color:#fff;
+    border-radius: 0.5rem;
+}
+.hero-section .container .home-col img{
+    width: clamp(30rem,30vw,50rem);
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* responsive  */
+
+@media screen and (max-width:696px) {
+    .hero-section .container{
+        flex-direction: column;
+        padding-top: 10rem;
+    }
+
+    .hero-section .container .home-col{
+        flex-basis: 80%;
+        /* background: red; */
+    }    
+}
